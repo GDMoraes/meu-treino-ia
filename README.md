@@ -1,13 +1,14 @@
-# Meu Treino IA V14 — Login em tela separada
+# Meu Treino IA V17 — avaliação e cargas livres
 
-Correção do layout da V13: cadastro, login e recuperação de senha agora aparecem em uma tela exclusiva e a ficha só é exibida após autenticação.
+- Tela de avaliação após o primeiro login: idade, peso corporal, altura, objetivo, nível, divisão, dias disponíveis e dores/restrições.
+- Aba Perfil para revisar respostas.
+- Carga em kg digitada pelo usuário, independente por exercício e por série; as últimas entradas podem aparecer como sugestão editável.
+- Histórico de cargas preservado ao editar a avaliação.
+- Perfil e histórico incluídos no estado da ficha sincronizado na tabela workout_plans.plan_data via Supabase.
+- Em caso de dor, ficha apenas demonstrativa até avaliação profissional.
 
 ## Publicação
-1. Extraia o ZIP.
-2. Envie o conteúdo **de dentro da pasta** à raiz do repositório GitHub Pages, substituindo os arquivos anteriores.
-3. Aguarde a publicação do Pages.
-4. No aplicativo instalado, feche e abra novamente; caso persista a versão antiga, atualize pelo navegador ou remova e reinstale a PWA (atenção a dados locais ainda não sincronizados).
+Extraia e envie o conteúdo da pasta à raiz do repositório GitHub Pages, substituindo os arquivos antigos. Teste em janela anônima e com conta de teste.
 
-## Segurança
-Não introduza dados de saúde reais antes de testes com contas distintas e revisão das políticas RLS.
-A autenticação online requer conexão à internet, mesmo que imagens e interface estejam armazenadas offline.
+## Atenção
+Para contas antigas, o formulário aparecerá uma vez. Mudanças em divisão/dias geram nova ficha, mas não apagam o histórico de séries. O projeto ainda precisa de testes de autenticação, sincronização e proteção entre usuários antes de liberação pública.
